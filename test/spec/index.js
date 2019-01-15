@@ -5,7 +5,7 @@ const ChildProcess = require('child_process')
 const Base = require('../functional/base')
 
 process.env.TEST_ILP_PREFIX = 'us.usd.red.'
-process.env.TEST_ACCOUNT_URI = 'http://localhost:3000/accounts'
+process.env.TEST_ACCOUNT_URI = 'http://localhost:4000/accounts'
 process.env.TEST_ACCOUNT_1 = Base.account1Name
 process.env.TEST_ACCOUNT_2 = Base.account2Name
 process.env.TEST_PASSWORD_1 = Base.account1Password
