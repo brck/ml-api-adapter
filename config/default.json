@@ -64,7 +64,7 @@
             "rdkafkaConf": {
               "client.id": "ml-con-notification-event",
               "group.id": "ml-group-notification-event",
-              "metadata.broker.list": "localhost:9092",
+              "metadata.broker.list": "10.1.82.49:9092,10.1.81.42:9092,10.1.80.55:9092",
               "socket.keepalive.enable": true
             },
             "topicConf": {
@@ -82,7 +82,7 @@
               "messageCharset": "utf8"
             },
             "rdkafkaConf": {
-              "metadata.broker.list": "localhost:9092",
+              "metadata.broker.list": "10.1.82.49:9092,10.1.81.42:9092,10.1.80.55:9092",
               "client.id": "ml-prod-transfer-prepare",
               "event_cb": true,
               "dr_cb": true,
@@ -100,7 +100,7 @@
               "messageCharset": "utf8"
             },
             "rdkafkaConf": {
-              "metadata.broker.list": "localhost:9092",
+              "metadata.broker.list": "10.1.82.49:9092,10.1.81.42:9092,10.1.80.55:9092",
               "client.id": "ml-prod-transfer-fulfil",
               "event_cb": true,
               "dr_cb": true,
@@ -118,7 +118,7 @@
               "messageCharset": "utf8"
             },
             "rdkafkaConf": {
-              "metadata.broker.list": "localhost:9092",
+              "metadata.broker.list": "10.1.82.49:9092,10.1.81.42:9092,10.1.80.55:9092",
               "client.id": "ml-prod-transfer-get",
               "event_cb": true,
               "dr_cb": true,
