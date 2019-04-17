@@ -1,4 +1,4 @@
-const RC = require('rc')('MLAPI', require('../../config/default.json'))
+const RC = require('rc')('MLAPI', require('../../config/default'))
 
 module.exports = {
   HOSTNAME: RC.HOSTNAME.replace(/\/$/, ''),

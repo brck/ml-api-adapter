@@ -1,4 +1,6 @@
-{
+const kafkaBrokerList = process.env.KAFKA_BROKER_LIST || "0.0.0.0:9092";
+console.log("kafka ==>", kafkaBrokerList)
+module.exports = {
   "PORT": 3000,
   "HOSTNAME": "http://ml-api-adapter",
   "ENDPOINT_SOURCE_URL": "http://localhost:3001/participants/{{fsp}}/endpoints",
@@ -64,7 +66,7 @@
             "rdkafkaConf": {
               "client.id": "ml-con-notification-event",
               "group.id": "ml-group-notification-event",
-              "metadata.broker.list": "0.0.0.0:9092",
+              "metadata.broker.list": kafkaBrokerList,
               "socket.keepalive.enable": true
             },
             "topicConf": {
@@ -82,7 +84,7 @@
               "messageCharset": "utf8"
             },
             "rdkafkaConf": {
-              "metadata.broker.list": "0.0.0.0:9092",
+              "metadata.broker.list": kafkaBrokerList,
               "client.id": "ml-prod-transfer-prepare",
               "event_cb": true,
               "dr_cb": true,
@@ -100,7 +102,7 @@
               "messageCharset": "utf8"
             },
             "rdkafkaConf": {
-              "metadata.broker.list": "0.0.0.0:9092",
+              "metadata.broker.list": kafkaBrokerList,
               "client.id": "ml-prod-transfer-fulfil",
               "event_cb": true,
               "dr_cb": true,
@@ -118,7 +120,7 @@
               "messageCharset": "utf8"
             },
             "rdkafkaConf": {
-              "metadata.broker.list": "0.0.0.0:9092",
+              "metadata.broker.list": kafkaBrokerList,
               "client.id": "ml-prod-transfer-get",
               "event_cb": true,
               "dr_cb": true,
